@@ -111,30 +111,30 @@ Gain=-20dB.
 ## Aim:
 To do the DC analysis,Transient and AC analysis of a CS amplifier circuit and extract the various parameters associated using LT Spice.
 ## Theory : 
-When a diode is connected to a mosfet transistor is always in saturation region and acts as an amplifier and also acts as a constant current source.\
+When a diode is connected to a mosfet transistor is always in saturation region and acts as an amplifier and also acts as a constant current source.
 There are 3 different types of analysis that are AC Analysis, DC Analysis and Transient analysis. 
-To find the drain current, the formula is as: \
+To find the drain current, the formula is as: 
 **I<sub>d</sub> = 1/2 k<sub>n</sub> V<sub>ov</sub><sup>2</sup>** ; **V<sub>ov</sub>=V<sub>gs</sub>-V<sub>th</sub>** and **k<sub>n</sub>=u<sub>n</sub> C<sub>ox</sub> W/L**
 
 ### DC Analysis:
 
-DC Analysis helps to calculate the DC operationg point of the transistor.(this helps in signal distortion)\
-DC Analysis is done to ensure that MOSFET operates in saturation.\
-DC Analysis helps in the determination of the biasing resistors.\
+DC Analysis helps to calculate the DC operationg point of the transistor.(this helps in signal distortion)
+DC Analysis is done to ensure that MOSFET operates in saturation.
+DC Analysis helps in the determination of the biasing resistors.
 DC Analysis helps in getting a correct operating point despite the fluctuation in the other parameters.
 
 ### Transient Analysis:
 
-Transient Analysis plays a very important role in detecting issues like phase distortion.\
-Transient Analysis is essential for high speed applications like communication systems.\
-Transient Analysis is helpful to determine the signl distorton and DC shift between the input and the output.\
+Transient Analysis plays a very important role in detecting issues like phase distortion.
+Transient Analysis is essential for high speed applications like communication systems.
+Transient Analysis is helpful to determine the signl distorton and DC shift between the input and the output.
 Transient Analysis is mainly done to analyse the response of the circuit to time varying signals. 
 
 ### AC Analysis:
 
-AC Analysis is the small signal analysis of the circuit.\
-AC Analysis is done to determine the Gain of the amplifier circuit .\
-AC Analysis also helps to analyze the Frequency Reponse of the amplifier circuit.\
+AC Analysis is the small signal analysis of the circuit.
+AC Analysis is done to determine the Gain of the amplifier circuit .
+AC Analysis also helps to analyze the Frequency Reponse of the amplifier circuit.
 
 The gain is given by **A<sub>v</sub> = -g<sub>m</sub> R<sub>d</sub>**
 
@@ -173,6 +173,6 @@ Vout:0.78V
 ![Screenshot 2025-02-17 234605](https://github.com/user-attachments/assets/34cd895f-6d3d-4f15-88db-2cdc27969761)
 
 ### Inference:
-1.The drain current (I_d) depends on the MOSFET width, varying with changes in width while other parameters remain constant. Proper DC analysis ensures correct biasing, allowing the MOSFET to operate in saturation and maintain Q-point stability.\
+1.The drain current (I_d) depends on the MOSFET width, varying with changes in width while other parameters remain constant. Proper DC analysis ensures correct biasing, allowing the MOSFET to operate in saturation and maintain Q-point stability.
 
 2.Transient analysis evaluates the circuit’s response to time-domain signals, crucial for high-speed applications, while AC analysis aids in designing amplifiers with desired gain, impedance matching, and frequency response. Together, these analyses help in optimizing amplifier performance.
