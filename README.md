@@ -23,30 +23,35 @@ The drain current:
 Output is taken from the drain end.
 
 ### DC Analysis:
-1.DC analysis is done to ensure the MOSFET operates in saturation region and to calculate the DC operationg point of the transistor. This prevents signal distortion .\
-2.DC analysis helps in the determination of the biasing resistors.\
-3.DC analysis helps in getting a correct operating point despite the fluctuation in the other parameters.
+DC analysis is done to ensure the MOSFET operates in saturation region and to calculate the DC operationg point of the transistor. This prevents signal distortion .\
+DC analysis helps in the determination of the biasing resistors.\
+DC analysis helps in getting a correct operating point despite the fluctuation in the other parameters.
 
 ### Transient Analysis:
-1.Transient Analysis is done to analyse the response of the circuit to time varying signals. 
-2.Transient Analysis is helpful to determine the signl distorton, DC shift between the input and the output.
-3.Transient Analysis plays key role in detecting issues like phase distortion.This is essential for high speed applications like communication systems.
+Transient Analysis is done to analyse the response of the circuit to time varying signals.\
+Transient Analysis is helpful to determine the signl distorton, DC shift between the input and the output.\
+Transient Analysis plays key role in detecting issues like phase distortion.This is essential for high speed applications like communication systems.
 
 ### AC Analysis:
-1.AC Analysis is the small signal analysis of the circuit.This is done to determine the Gain of the amplifier circuit .\
-2.AC Analysis helps to analyze the Frequency Reponse of the amplifier circuit.
-3.AC Analysis the gain is given by **A<sub>v</sub> = -g<sub>m</sub> R<sub>d</sub>**
+AC Analysis is the small signal analysis of the circuit.This is done to determine the Gain of the amplifier circuit .\
+AC Analysis helps to analyze the Frequency Reponse of the amplifier circuit.\
+AC Analysis the gain is given by **A<sub>v</sub> = -g<sub>m</sub> R<sub>d</sub>**
 
 ## Procedure:
 1.Create a new folder and name it as project(name) file. Save the LT spice file in this folder.<br>
+
 2.Name the MOSFET as CMOSN and the length as 180nm and width as 3um initially.<br>
+
 3.For the PMOS name it as CMOSP and set the length as 180nm and width as 3um respectively.<br>
+
 4.**DC Analysis:**
 For DC analysis set up the circuit as per the circuit diagram with proper connections ensuring valid circuit for further analysis.
 Apply the DC voltage of Vdd=1.8V and Vgs = 0.9 V. Go to simulate option in the tab and edit simulation command, click on DC analysis and press ok.(.op)
 Click on Run in the tab menu to get the DC operating point, Vout and Id.<br>
+
 5.**Transient Analysis:**
 For Transient analysis apply a sine wave input of Vgs=0.9V with an amplitude of 50mV and frequency of 1kHz by going to advanced menu in the voltage setting option.go to simulate option in tab ,edit simulation command, click on transient analysis and give the stop time as 3m and click ok.(.tran 3m) Now Run to visualise the response of the circuit to a time varying signal.<br>
+
 6.**AC Analysis:**
 For AC analysis go to spice directive and give the library file path for the simulator to access the data through the path. Go to simulate option in the tab, edit simulation command, click on AC analysis and mention the time of sweep as decade, no of points as 20 and frequency as. 1Hz to 1THz and click on ok. Now Run to analyze the gain and frequency response of the circuit(.ac dec 20 .1 1T).<br>
 
@@ -94,4 +99,7 @@ Gain=-20dB.
 2. Q-point stability in the saturation region enables linear amplification, with increased gain in the mid-band frequency range (small signal analysis).  
 
 3. Transient analysis reveals the circuit’s time-domain response, essential for high-speed applications, while AC analysis helps in designing circuits with the desired gain, impedance matching, and understanding frequency response.
+
+
+# EXP-2
 
