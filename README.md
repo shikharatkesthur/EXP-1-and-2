@@ -3,7 +3,7 @@
 To do the DC analysis,Transient and AC analysis of a CS amplifier circuit and 
 extract the various parameters associated using LT Spice.
 
-##Components required:
+## Components required:
 MOSFETs:nmos4, Ressisters:1k, Voltage supply:(1.8V,0.9V) and connecting wires.
 
 ## Theory:
