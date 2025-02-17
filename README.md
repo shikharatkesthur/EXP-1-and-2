@@ -41,11 +41,14 @@ Output is taken from the drain end.
 1.Create a new folder and name it as project(name) file. Save the LT spice file in this folder.<br>
 2.Name the MOSFET as CMOSN and the length as 180nm and width as 3um initially.<br>
 3.For the PMOS name it as CMOSP and set the length as 180nm and width as 3um respectively.<br>
-4.**DC Analysis:** For DC analysis set up the circuit as per the circuit diagram with proper connections ensuring valid circuit for further analysis.
+4.**DC Analysis:**
+For DC analysis set up the circuit as per the circuit diagram with proper connections ensuring valid circuit for further analysis.
 Apply the DC voltage of Vdd=1.8V and Vgs = 0.9 V. Go to simulate option in the tab and edit simulation command, click on DC analysis and press ok.(.op)
 Click on Run in the tab menu to get the DC operating point, Vout and Id.<br>
-5.**Transient Analysis:** For Transient analysis apply a sine wave input of Vgs=0.9V with an amplitude of 50mV and frequency of 1kHz by going to advanced menu in the voltage setting option.go to simulate option in tab ,edit simulation command, click on transient analysis and give the stop time as 3m and click ok.(.tran 3m) Now Run to visualise the response of the circuit to a time varying signal.<br>
-6.**AC Analysis:** For AC analysis go to spice directive and give the library file path for the simulator to access the data through the path. Go to simulate option in the tab, edit simulation command, click on AC analysis and mention the time of sweep as decade, no of points as 20 and frequency as. 1Hz to 1THz and click on ok. Now Run to analyze the gain and frequency response of the circuit(.ac dec 20 .1 1T).<br>
+5.**Transient Analysis:**
+For Transient analysis apply a sine wave input of Vgs=0.9V with an amplitude of 50mV and frequency of 1kHz by going to advanced menu in the voltage setting option.go to simulate option in tab ,edit simulation command, click on transient analysis and give the stop time as 3m and click ok.(.tran 3m) Now Run to visualise the response of the circuit to a time varying signal.<br>
+6.**AC Analysis:**
+For AC analysis go to spice directive and give the library file path for the simulator to access the data through the path. Go to simulate option in the tab, edit simulation command, click on AC analysis and mention the time of sweep as decade, no of points as 20 and frequency as. 1Hz to 1THz and click on ok. Now Run to analyze the gain and frequency response of the circuit(.ac dec 20 .1 1T).<br>
 
 # Circuit:
 ![Screenshot 2025-02-17 203917](https://github.com/user-attachments/assets/8c6db871-25f1-4069-a4d4-1286e52bab4a)
