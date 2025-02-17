@@ -24,17 +24,23 @@ Output is taken from the drain end.
 
 ### DC Analysis:
 DC analysis is done to ensure the MOSFET operates in saturation region and to calculate the DC operationg point of the transistor. This prevents signal distortion .\
+
 DC analysis helps in the determination of the biasing resistors.\
+
 DC analysis helps in getting a correct operating point despite the fluctuation in the other parameters.
 
 ### Transient Analysis:
 Transient Analysis is done to analyse the response of the circuit to time varying signals.\
+
 Transient Analysis is helpful to determine the signl distorton, DC shift between the input and the output.\
+
 Transient Analysis plays key role in detecting issues like phase distortion.This is essential for high speed applications like communication systems.
 
 ### AC Analysis:
 AC Analysis is the small signal analysis of the circuit.This is done to determine the Gain of the amplifier circuit .\
+
 AC Analysis helps to analyze the Frequency Reponse of the amplifier circuit.\
+
 AC Analysis the gain is given by **A<sub>v</sub> = -g<sub>m</sub> R<sub>d</sub>**
 
 ## Procedure:
