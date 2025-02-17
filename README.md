@@ -163,6 +163,7 @@ For AC analysis go to spice directive and give the library file path for the sim
 
 ## DC Analysis:
 ![Screenshot 2025-02-17 234151](https://github.com/user-attachments/assets/1a09b5ae-bcd2-4d5a-8736-6be9c78f8d2b)
+
 Operating point:(0.78V,27.78uA)
 
 ## Transient Anlaysis:
